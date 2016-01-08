@@ -1,0 +1,155 @@
+#contentArea ._4-u2 {
+  /*border: none !important;*/
+  border-color: transparent;
+}
+html#blissfully-plugin {
+  margin: 0;
+  padding: 0;
+}
+
+#blissfully-plugin body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+	background-color: #fff;
+}
+#blissfully-plugin header {
+	padding: 15px;
+	background-color: #233084; /* #303f9f*/
+}
+#blissfully-plugin ul {
+  list-style-type: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+#keyword-list li {
+  padding: 16px 16px 20px 16px;
+  clear: both;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+  #blissfully-plugin h1 {
+    margin: 0;
+  	text-align: center;
+  	font-size: 25px;
+  	font-weight: 200;
+  	color: #fff;
+  	font-weight: normal;
+  	letter-spacing: 5px;
+  }
+
+#blissfully-plugin h1, 
+#blissfully-plugin input::-webkit-input-placeholder, 
+#blissfully-plugin button {
+ font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+}
+
+
+#blissfully-plugin .keyword-section {
+	padding: 20px;
+	background: #3f51b5;
+}
+
+/* Input styles - Material Design */
+#blissfully-plugin input {
+  margin: 5px auto 40px auto;
+  width: 265px;
+  display: block;
+  border: none;
+  line-height: 15px;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background-position: -265px 0;
+  background-size: 265px 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 15px;
+}
+#blissfully-plugin input:focus, 
+#blissfully-plugin input:valid {
+ box-shadow: none;
+ outline: none;
+ background-position: 0 0;
+}
+#blissfully-plugin ::-webkit-input-placeholder {
+	color: #8591d5;
+	font-size: 14px;
+}
+#blissfully-plugin input:focus::-webkit-input-placeholder, 
+#blissfully-plugin input:valid::-webkit-input-placeholder {
+ color: #f0f0f0;
+ font-size: 14px;
+ -webkit-transform: translateY(-20px);
+ transform: translateY(-20px);
+ visibility: visible !important;
+}
+
+/* Add to Blacklist Button */
+#blissfully-plugin button#blissful-save {
+  display: block;
+  width: 265px;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  background: #1abc9c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+#blissfully-plugin button.blissful-delete-keyword {
+  float: right;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+  #blissfully-plugin button#blissful-save:hover {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+#blissfully-plugin .blissfully__block-count {
+  color: #8591d5;
+}
+#blissful-blacklist {
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Link that switches plugin view */
+#blissfully-plugin .view-blacklist {
+  margin-top: 15px;
+  text-align: center;
+}
+#blissfully-plugin .view-blacklist a {
+  color: #303f9f;
+  text-decoration: none;
+  border-bottom: 1px solid #303f9f;
+}
+
+#blissfully-plugin .show {
+  display: block;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#blissfully-plugin .hide {
+  display: none !important;
+  opacity: 0 !important;
+  transition: 0.2s;
+}
+/*#blissful-view-blacklist {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}*/

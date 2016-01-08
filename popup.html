@@ -1,0 +1,31 @@
+<html id="blissfully-plugin">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/blissfully.js"></script>
+	<script type="text/javascript" src="js/background.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="logo.png" style="float: left;margin-top:-5px;margin-right: -40px">
+		<h1>Blissfully</h1>
+	</header>
+	<div class="ignorantiam-container">
+		<div id="blissful-add-keyword" class="keyword-section show">
+			<input id="blissful-keyword" tabindex="-1" placeholder="Enter a topic to hide from your FB Feed" type="text" required>
+			<button id="blissful-save" tabindex="-1" >Add to Blacklist</button>
+			<div class="view-blacklist">
+				<p class="blissfully__block-count">Total stories blocked: <span id="blissfully__block-count">...</span></p>
+				<p><a id="blissful-blacklist" tabindex="-1">View Blacklist</a></p>
+				<a id="status"></a>
+			</div>
+		</div>
+		<div id="blissful-view-blacklist" class="keyword-list hide">
+			<ul id="keyword-list"></ul>
+		</div>
+	</div>
+
+</body>
+
+</html>

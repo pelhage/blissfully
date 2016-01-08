@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Blissfully: Facebook News Feed Filter",
+  "short_name": "Blissfully",
+  "description": "Hide topics you don't like from Facebook",
+  "version": "1.0.2",
+
+  "icons" : {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background" : {
+    "scripts": ["js/background.js"]
+  },
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Filter stories from your Facebook News Feed"
+  },
+  "content_scripts": [{
+    "matches": ["*://www.facebook.com/*"],
+    "css": ["style.css"],
+    "js": ["js/blissfully.js"]
+  }],
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ]
+}
